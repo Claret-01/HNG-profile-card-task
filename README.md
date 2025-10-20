@@ -65,7 +65,7 @@ cd profile-card
 
 Open index.html in your browser to view it.
 
-🔗 Live Site on Netlify - 
+🔗 Live Site on Netlify - https://netlify.com/claretsprofilecard.netlify.app
 
 🔗 GitHub Repository - https://github.com/Claret-01/HNG-profile-card-task.git
 
