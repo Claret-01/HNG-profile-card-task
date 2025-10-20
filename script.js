@@ -1,27 +1,14 @@
 function updateTime() {
-    const timeElement = document.querySelector('[data-testid="test-user-time"]');
-    if (timeElement) {
-        const now = new Date();
-        const hours = now.getHours();
-        const minutes = now.getMinutes();
-        const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
-        timeElement.textContent = `Time: ${formattedTime}`;
-    }
+  const timeElement = document.querySelector('[data-testid="test-user-time"]');
+  if (timeElement) {
+    const now = Date.now();
+    timeElement.textContent = now; // shows milliseconds
+  }
 }
 
 function initProfileCard() {
-    updateTime();
-    
-    setInterval(updateTime, 1000);
-    
-    const socialLinks = document.querySelectorAll('.social-link');
-    socialLinks.forEach(link => {
-        link.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter') {
-                this.click();
-            }
-        });
-    });
+  updateTime();
+  setInterval(updateTime, 1000); // update every second
 }
 
 document.addEventListener('DOMContentLoaded', initProfileCard);
