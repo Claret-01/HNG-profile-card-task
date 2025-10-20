@@ -12,7 +12,7 @@ Each element includes a data-testid attribute for automated testing, and the des
 ✅ Semantic HTML elements (article, header, figure, nav, section)</br>
 ✅ Responsive layout for mobile and desktop</br>
 ✅ Hover effects on avatar and social links</br>
-✅ Dynamic current time display (Date.now())</br>
+✅ Dynamic current time display in milliseconds (Date.now())</br>
 ✅ Accessible alt text for the avatar image</br>
 ✅ Keyboard-focusable social links</br>
 ✅ Clean UI</br>
