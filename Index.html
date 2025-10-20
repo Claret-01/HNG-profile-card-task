@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+        <header class="card-header">
+            <h2 class="user-name" data-testid="test-user-name">Claret Kanyima</h2>
+            <p class="user-time" data-testid="test-user-time">Loading time...</p>
+        </header>
+
+        <div class="card-content">
+            <section class="avatar-section">
+                <figure class="avatar-figure">
+                    <img 
+                        src="https://i.pinimg.com/736x/57/5d/cf/575dcf496fce15721ca1df69db1909ee.jpg" 
+                        alt="Claret Kanyima profile photo" 
+                        class="user-avatar"
+                        data-testid="test-user-avatar">
+                </figure>
+            </section>
+
+            <section class="user-info">
+                <section class="bio-section">
+                    <p class="user-bio" data-testid="test-user-bio">
+                      Frontend developer, I enjoy creating accessible and responsive web experiences. 
+                Currently specializing in React and modern CSS. If I'm not writing codes, I'm either eating or sleeping. Love creativity and technology.
+                    </p>
+                </section>
+
+                <section class="social-section">
+                    <h3 class="section-title">Connect</h3>
+                    <nav>
+                        <ul class="social-links" data-testid="test-user-social-links">
+                            <li>
+                                <a href="https://github.com/claret-01" class="social-link" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">
+                                    GitHub
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/@inspiro_001" class="social-link" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/claret-obele" class="social-link" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="lists-section">
+                    <div class="list-container">
+                        <h3 class="section-title">Likes</h3>
+                        <ul class="user-list" data-testid="test-user-hobbies">
+                            <li class="list-item">Reading Books</li>
+                            <li class="list-item">Writing Codes</li>
+                            <li class="list-item">Staying indoors</li>
+                            <li class="list-item">Listening to music</li>
+                        </ul>
+                    </div>
+
+                    <div class="list-container">
+                        <h3 class="section-title">Dislikes</h3>
+                        <ul class="user-list" data-testid="test-user-dislikes">
+                            <li class="list-item">Bugs in code</li>
+                            <li class="list-item">Dirty environment</li>
+                            <li class="list-item">Men</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
